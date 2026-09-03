@@ -33,12 +33,12 @@ for path in sorted(Path("logs").glob("*.eval")):
             se = statistics.stdev(refused) / math.sqrt(len(refused))
             if nan_count:
                 print(f"NOTE: {path.name}: {nan_count} NaN grade(s); "
-                      f"excluded from SE, but the task's refusal_rate still devides by n={n}")
-            else:
-                raise KeyError(f"{path.name}: scorer {score.name} has metrics {list(score.metrics)}, no handler")
+                      f"excluded from SE, but the task's refusal_rate still divides by n={n}")
+        else:
+            raise KeyError(f"{path.name}: scorer {score.name} has metrics {list(score.metrics)}, no handler")
         rows.append((task, model, score.name, n, metric, value, se))
 
 print("| Task | Model | Scorer | n | Metric | Value | Std. error |")
 print("|---|---|---|---|---|---|---|")
 for task, model, scorer, n, metric, value, se in rows:
-    print(f"| {task} | {model} | {scorer} | {n} | {metric} | {value:.3f} | {se:.3f}")
+    print(f"| {task} | {model} | {scorer} | {n} | {metric} | {value:.3f} | {se:.3f} |")
