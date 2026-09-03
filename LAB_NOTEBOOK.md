@@ -50,7 +50,7 @@ At n = 100, the standard error near 0.5 is roughly .05, so at a 95% confidence i
 |---|---|---|
 | P1 | confirmed | At this n, the unpaired difference of proportions puts the p-value of the comparison at 0.31 meaning there is not a statistically significant difference between the models |
 | P2 | refuted | The results for both models are exactly the same, discounting noise. |
-| P3 | confirmed* | While it is statistically likely that my prediction holds confirmed, I will give the caveat that the 95% confidence interval has a range of .0875 to .2325. |
+| P3 | unresolvable* | While it is statistically likely that my prediction holds confirmed, the 95% confidence interval has a range of .0875 to .2325, so the prediction isn't fully verifiable at this n. |
 | P4 | confirmed | As the Match and Choice scoroer evals came out with no statistically significant difference between the models, the model-graded task does indeed show the largest gap between A and B relative to stderr. |
 
 
@@ -92,6 +92,6 @@ inspect eval inspect_evals/gsm8k inspect_evals/truthfulqa inspect_evals/xstest -
 
 ## 10. Tooling
 
-Claude Code was used for advising and scaffolding results_table.py.
+Claude C4ode was used for advising and scaffolding results_table.py.
 
 All prose, predictions, and interpretation are the author's.

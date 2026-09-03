@@ -4,7 +4,7 @@ Written and committed before full evaluation runs.
 
 **Date:** 2026-09-02
 
-**Models:** A = anthropic/claude-haiku-4-5-20251001; B = openai-api/local/qwen3.6-35b-a3b, reasoning = off, model quant = UD-Q3_K_M, KV quant = q8_0
+**Models:** A = anthropic/claude-haiku-4-5-20251001; B = openai-api/local/qwen3.6-35b-a3b-nothink, reasoning = off, model quant = UD-Q3_K_M, KV quant = q8_0
 
 **Tasks:** gsm8k (match, numeric), truthfulqa (choice, MC1), xstest (model-graded; grader = A)
 
